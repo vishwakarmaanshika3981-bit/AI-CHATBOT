@@ -57,7 +57,7 @@ if user_prompt:
             for char in assistant_reply:
                 typed_text += char
                 placeholder.markdown(typed_text)
-                time.sleep(0.02)  # typing speed (adjust)
+                time.sleep(0.002)  # typing speed (adjust)
 
     st.session_state.messages.append(
         {"role": "assistant", "content": assistant_reply}
@@ -71,6 +71,7 @@ if st.sidebar.button("🔄 Reset Conversation"):
     
     
     st.markdown('**design and developed by: Anshika**')
+
 
 
 
